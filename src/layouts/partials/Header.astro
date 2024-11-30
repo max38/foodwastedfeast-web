@@ -22,7 +22,7 @@ const { navigation_button, settings } = config;
 const { pathname } = Astro.url;
 ---
 
-<header class={`header z-30 ${settings.sticky_header && "sticky top-0"}`}>
+<header class={`header z-30 ${settings.sticky_header && "sticky top-0"}`} style="background-color: #045F36; color: #FFFF00;">
   <nav class="navbar container">
     <!-- logo -->
     <div class="order-0">
@@ -96,6 +96,7 @@ const { pathname } = Astro.url;
                     (pathname === `${menu.url}/` || pathname === menu.url) &&
                     "active"
                   }`}
+                  style="font-size: 20px; color: #FFFF00;"
                 >
                   {menu.name}
                 </a>
