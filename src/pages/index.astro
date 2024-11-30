@@ -4,6 +4,8 @@ import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction.astro";
 import Testimonial from "@/partials/Testimonial.astro";
+import HomeIntro from "@/partials/HomeIntro.astro";
+import HomeFunfact from "@/partials/HomeFunfact.astro";
 import type { Button, Feature } from "@/types";
 import { getEntry } from "astro:content";
 import { FaCheck } from "react-icons/fa";
@@ -25,8 +27,20 @@ const { banner, features }: Homepage = homepage.data;
 ---
 
 <Base>
+    <div class="container pt-14">
+      <div class="row justify-center">
+        <div class="lg:col-7 md:col-9 mb-8 text-center">
+          <h1
+            set:html={markdownify(banner.title)}
+            class="mb-4 text-h3 lg:text-h1"
+          />
+        </div>
+      </div>
+    </div>
+  <HomeIntro />
+  <!-- <HomeFunfact /> -->
   <!-- Banner -->
-  <section class="section pt-14">
+  <section class="section pt-14" style="background-color: #CEEBDE;">
     <div class="container">
       <div class="row justify-center">
         <div class="lg:col-7 md:col-9 mb-8 text-center">
