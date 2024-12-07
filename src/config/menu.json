@@ -10,13 +10,13 @@
     },
     {
       "name": "ตั้งเป้าหมาย",
-      "url": "/elements"
+      "url": "#pledge-wall"
     }
   ],
   "footer": [
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "ตั้งเป้าหมาย",
+      "url": "#pledge-wall"
     },
     {
       "name": "Privacy Policy",
