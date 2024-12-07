@@ -2,13 +2,14 @@
 import ImageMod from "@/components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
-import CallToAction from "@/partials/CallToAction.astro";
-import Testimonial from "@/partials/Testimonial.astro";
+import PledgeWall from "@/components/pledgeWall";
+// import CallToAction from "@/partials/CallToAction.astro";
+// import Testimonial from "@/partials/Testimonial.astro";
 import HomeIntro from "@/partials/HomeIntro.astro";
-import HomeFunfact from "@/partials/HomeFunfact.astro";
+// import HomeFunfact from "@/partials/HomeFunfact.astro";
 import type { Button, Feature } from "@/types";
 import { getEntry } from "astro:content";
-import { FaCheck } from "react-icons/fa";
+// import { FaCheck } from "react-icons/fa";
 
 interface Homepage {
   banner: {
@@ -81,6 +82,10 @@ const { banner, features }: Homepage = homepage.data;
     </div>
   </section>
   <!-- /Banner -->
+
+  <PledgeWall 
+    src="http://lab-1.aigts.co:32044/"
+  />
 
   <!-- Features 
   {
