@@ -19,21 +19,16 @@ const { title, description, meta_title, image } = about.data;
     <div class="container">
       <div class="row justify-center">
         <div class="text-center md:col-10 lg:col-7">
-          {
-            image && (
-              <ImageMod
-                class="mx-auto mb-6 rounded-lg"
-                src={image}
-                width={200}
-                height={200}
-                alt={title}
-                format="webp"
-              />
-            )
-          }
           <h2 set:html={markdownify(title)} class="h3 mb-6" />
           <div class="content">
-            <Content />
+            <!-- <Content /> -->
+            we’re diving deep into the story behind each
+            bite, revealing the hidden journey of food
+            waste through mind-blowing Augmented
+            Reality.
+          </div>
+          <div>
+            <img src="/images/FCI_Booth.png" alt="Plate" />
           </div>
         </div>
       </div>

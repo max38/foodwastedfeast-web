@@ -9,6 +9,7 @@ import HomeIntro from "@/partials/HomeIntro.astro";
 // import HomeFunfact from "@/partials/HomeFunfact.astro";
 import type { Button, Feature } from "@/types";
 import { getEntry } from "astro:content";
+import "../styles/index.css";
 // import { FaCheck } from "react-icons/fa";
 
 interface Homepage {
@@ -31,10 +32,14 @@ const { banner, features }: Homepage = homepage.data;
     <div class="container pt-14">
       <div class="row justify-center">
         <div class="lg:col-7 md:col-9 mb-8 text-center">
-          <h1
+          <!-- <h1
             set:html={markdownify(banner.title)}
             class="mb-4 text-h3 lg:text-h1"
-          />
+          /> -->
+          <div class="styled-text">
+            กว่าจะได้หนึ่งจานโปรดของคุณ<br>
+            โลกต้อง <span class="highlight">"เสีย"</span> อะไรบ้าง
+          </div>
         </div>
       </div>
     </div>
@@ -44,11 +49,15 @@ const { banner, features }: Homepage = homepage.data;
   <section class="section pt-14" style="background-color: #CEEBDE;">
     <div class="container">
       <div class="row justify-center">
+        <!-- <div style="position: absolute;" >
+          <img width="250" src="/images/plate-1.png" alt="Your Image">
+        </div> -->
+
         <div class="lg:col-7 md:col-9 mb-8 text-center">
-          <h1
+          <!-- <h1
             set:html={markdownify(banner.title)}
             class="mb-4 text-h3 lg:text-h1"
-          />
+          /> -->
           <p set:html={markdownify(banner.content)} class="mb-8" />
           {
             banner.button.enable && (
@@ -56,8 +65,9 @@ const { banner, features }: Homepage = homepage.data;
                 class="btn btn-primary"
                 href={"#pledge-wall"}
                 rel="noopener"
+                style="padding: 20px 40px;"
               >
-                {banner.button.label}
+                <h1 style="color:#fff;">{banner.button.label}</h1>
               </a>
             )
           }

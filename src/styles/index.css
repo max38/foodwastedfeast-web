@@ -1,0 +1,12 @@
+.styled-text {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #0b4e14; /* Green text */
+    line-height: 1.4;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.styled-text .highlight {
+    color: #d64545; /* Red text */
+}
