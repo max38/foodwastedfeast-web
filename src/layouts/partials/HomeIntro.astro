@@ -5,7 +5,7 @@ import SpeechBubble from "@/components/SpeechBubble";
 
 <section class="relative mt-0 sm:mt-16 md:mt-18">
   <div class="h-[284px] sm:h-[420px] px-2 relative max-w-2xl lg:max-w-5xl mx-auto ">
-    <div class="">
+    <div class="hidden sm:block">
       <div class="flex max-w-[1264px] mx-auto mt-8 lg:mt-16">
         <div class="-rotate-3">
           <SpeechBubble position="right">
@@ -59,11 +59,60 @@ import SpeechBubble from "@/components/SpeechBubble";
     <img src="/images/plate.png" alt="Plate" class="-z-10 absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/3 sm:left-full sm:translate-x-[calc(-100%_-_8px)] lg:left-1/2 lg:-translate-x-1/2 ">
     <img src="/images/world.gif" alt="World" class="aspect-square -z-10 w-[246px] sm:w-[346px] absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/3 sm:left-full sm:translate-x-[calc(-100%_-_8px)] lg:left-1/2 lg:-translate-x-1/2 ">
     
+    
   </div>
+
+  
   
   <div class="absolute bottom-0 -z-20 w-screen">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.873 390.917">
       <path style="fill: #CEEBDE;" class="fill-st-theme-yellow-200" id="Path_13" data-name="Path 13" d="M3842,988.939C4376.069,454.871,5263.291,484,5758.17,978.882c1.866,3.887,3.3,6.964,4.7,10.057Z" transform="translate(-3842 -598.022)"></path>
     </svg>
+  </div>
+
+  
+</section>
+
+<section style="background-color: #CEEBDE;">
+  <div class="block sm:hidden">
+    <div class="flex flex-col items-center">
+      <div class="-rotate-3 mb-4">
+      <SpeechBubble position="right">
+        <div style="padding: 10px 50px;">
+        <img class="icon" style="width: 80px;height: 80px;margin-right: 15px;position:absolute;left:-12px;top:-12px" src="/images/speechBubble-3.png" alt="Shrimp Icon">
+        <div class="text-content" style="display: flex;flex-direction: column;">
+          <div class="main-text" style="color: #d64545;font-size: 18px;font-weight: bold;margin-bottom: 5px;margin-left:20px">ข้าวผัดกะเพรากุ้ง 1 จาน</div>
+          <div class="sub-text" style="color: #333;font-size: 16px;font-weight: normal;">คาร์บอน = ถุงพลาสติก 1000 ใบ</div>
+        </div>
+        </div>
+      </SpeechBubble>
+      </div>
+      <div class="rotate-3 mb-4">
+      <SpeechBubble>
+        <img src="/images/speechBubble-1.png" alt="รู้หรือไม่?" />
+        <div>
+        <h5>{`รู้หรือไม่?`}</h5>
+        <p>{`20% ของก๊าซเรือนกระจก\nเกิดจากอุตสาหกรรมอาหาร`}</p>
+        </div>
+      </SpeechBubble>
+      </div>
+      <div class="rotate-3 mb-4">
+      <SpeechBubble position="right">
+        <div style="display: flex; align-items: center; text-align: left;">
+        <img style="width: 120px; height: 120px; border-radius: 50%; margin-right: 15px;" src="/images/speechBubble-2.png" alt="Hippo Image">
+        <div style="display: flex; flex-direction: column;">
+          <div class="main-text" style="color: #333; font-size: 16px; font-weight: bold; margin-bottom: 5px;">ขยะอาหารในกรุงเทพ 1 วัน</div>
+          <div class="highlight" style="color: #d64545; font-size: 18px; font-weight: bold; line-height: 1.5;">หนักเท่าหมูเด้ง<br>133,333 ตัว</div>
+          <div class="hashtag" style="color: #888; font-size: 14px; margin-top: 8px;">#มะมะมะ หมูเด้ง</div>
+        </div>
+        </div>
+      </SpeechBubble>
+      </div>
+      <div class="-rotate-3">
+      <SpeechBubble>
+        <h3 style="padding: 10px 40px">{`#กินหมดจาน !!!`}</h3>
+      </SpeechBubble>
+      </div>
+    </div>
   </div>
 </section>
