@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PledgeWall = ({ src, width = "100%", height = "500px", title = "Iframe", style = {} }: { src: string, width?: string, height?: string, title?: string, style?: React.CSSProperties }) => {
+const PledgeWall = ({ src, width = "100%", height = "2000px", title = "Iframe", style = {} }: { src: string, width?: string, height?: string, title?: string, style?: React.CSSProperties }) => {
   return (
     <iframe
       id="pledge-wall"
